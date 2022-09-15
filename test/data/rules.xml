@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- <record id="hr_rule_pension_refund" model="hr.salary.rule">
+            <field name="name">Pension Refund</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.pension_refund)</field>
+            <field name="amount_select">code</field>
+            <field name="code">pension_refund</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.pension_refund)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_number_of_holidays" model="hr.salary.rule">
+            <field name="name">Number Of Holidays</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.number_of_holidays)</field>
+            <field name="amount_select">code</field>
+            <field name="code">number_of_holidays</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.number_of_holidays)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record>  -->
+
+        <!-- <record id="hr_rule_hours_worked" model="hr.salary.rule">
+            <field name="name">Hours Worked</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.hours_worked)</field>
+            <field name="amount_select">code</field>
+            <field name="code">hours_worked</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.hours_worked)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record>         -->
+<!-- ************************************************************************ -->
+        <!-- <record id="hr_rule_advance_payments" model="hr.salary.rule">
+            <field name="name">Advance Payments</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.advance_payments)</field>
+            <field name="amount_select">code</field>
+            <field name="code">advance_payments</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = -(contract.advance_payments)</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_childcare_vouchers" model="hr.salary.rule">
+            <field name="name">Childcare Vouchers</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.childcare_vouchers)</field>
+            <field name="amount_select">code</field>
+            <field name="code">childcare_vouchers</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = -(contract.childcare_vouchers)</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_salary_sacrifice" model="hr.salary.rule">
+            <field name="name">Salary Sacrifice</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.salary_sacrifice)</field>
+            <field name="amount_select">code</field>
+            <field name="code">salary_sacrifice</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = -(contract.salary_sacrifice)</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_expenses" model="hr.salary.rule">
+            <field name="name">Expenses</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.expenses)</field>
+            <field name="amount_select">code</field>
+            <field name="code">expenses</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = -(contract.expenses)</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record>         -->
+<!-- ***************************************** -->
+        <!-- <record id="hr_rule_additional_pay" model="hr.salary.rule">
+            <field name="name">Additional Pay</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.additional_pay)</field>
+            <field name="amount_select">code</field>
+            <field name="code">additional_pay</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.additional_pay)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_bouns" model="hr.salary.rule">
+            <field name="name">Bouns</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.bouns)</field>
+            <field name="amount_select">code</field>
+            <field name="code">bouns</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.bouns)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_commission" model="hr.salary.rule">
+            <field name="name">Commission</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.commission)</field>
+            <field name="amount_select">code</field>
+            <field name="code">commission</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.commission)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+
+        <!-- <record id="hr_rule_ex_gratia" model="hr.salary.rule">
+            <field name="name">Ex Gratia</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result=bool(contract.ex_gratia)</field>
+            <field name="amount_select">code</field>
+            <field name="code">ex_gratia</field>
+            <field name="sequence" eval="50"/>
+            <field name="amount_python_compute">result = +(contract.ex_gratia)</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="struct_id" ref="hr_payroll.structure_002"/>
+        </record> -->
+    </data>
+</odoo>

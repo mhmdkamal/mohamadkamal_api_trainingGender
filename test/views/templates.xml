@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+<!--        <template id="sale_travel_report_inherit_template" inherit_id="sale.report_saleorder_document">-->
+<!--            <xpath expr="//div[@class='row mt32 mb32']" position="replace">-->
+<!--            </xpath>-->
+<!--            <xpath expr="//h2[@class='mt16']" position="replace">-->
+<!--            </xpath>-->
+<!--            <xpath expr="//table[@class='table table-sm o_main_table']" position="replace">-->
+<!--                <table class="table table-sm o_main_table" id="travel_table"-->
+<!--                       style="border: 1pt solid black; border-collapse:separate">-->
+<!--                    <thead style="display: table-row-group; background-color: #e6e8eb">-->
+<!--                        <tr style="height:40pt">-->
+<!--                            <th name="th_hotel" class="text-left" style="border: 1pt solid black">Hotel Name</th>-->
+<!--                            <th name="th_room" class="text-left" style="border: 1pt solid black">Room type</th>-->
+<!--                            <th name="th_meal" class="text-left" style="border: 1pt solid black">Meal basis</th>-->
+<!--                            <th name="th_total" class="text_left" style="border: 1pt solid black">Total Rate</th>-->
+<!--                        </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody class="sale_tbody">-->
+<!--                        <tr style="height:40pt; border: 1pt solid black; border-collapse:separate">-->
+<!--                            <td name="td_hotel" style="border: 1pt solid black">-->
+<!--                                <span t-field="doc.hotel_id" class="text-right"/>-->
+<!--                            </td>-->
+<!--                            <td name="td_room" style="border: 1pt solid black">-->
+<!--                                <span t-field="doc.room_type_id" class="text-right"/>-->
+<!--                            </td>-->
+<!--                            <td name="td_meal" style="border: 1pt solid black">-->
+<!--                                <span t-field="doc.meal_basis_id" class="text-right"/>-->
+<!--                            </td>-->
+<!--                            <td name="td_total" style="border: 1pt solid black">-->
+<!--                                <span t-field="doc.amount_total" class="text-right"/>-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </xpath>-->
+<!--            <xpath expr="//div[@class='clearfix']" position="replace">-->
+<!--            </xpath>-->
+<!--            <xpath expr="//t[@t-set='address']" position="replace">-->
+<!--            </xpath>-->
+<!--        </template>-->
+<!--        &lt;!&ndash;-->
+<!--                <template id="listing">-->
+<!--                  <ul>-->
+<!--                    <li t-foreach="objects" t-as="object">-->
+<!--                      <a t-attf-href="#{ root }/objects/#{ object.id }">-->
+<!--                        <t t-esc="object.display_name"/>-->
+<!--                      </a>-->
+<!--                    </li>-->
+<!--                  </ul>-->
+<!--                </template>-->
+<!--                <template id="object">-->
+<!--                  <h1><t t-esc="object.display_name"/></h1>-->
+<!--                  <dl>-->
+<!--                    <t t-foreach="object._fields" t-as="field">-->
+<!--                      <dt><t t-esc="field"/></dt>-->
+<!--                      <dd><t t-esc="object[field]"/></dd>-->
+<!--                    </t>-->
+<!--                  </dl>-->
+<!--                </template>-->
+<!--        &ndash;&gt;-->
+    </data>
+</odoo>

@@ -1,0 +1,188 @@
+<odoo>
+  <data>
+
+<!--    <record id="view_order_form_inherit" model="ir.ui.view">-->
+<!--        <field name="name">view.order.form.inherit</field>-->
+<!--        <field name="model">sale.order</field>-->
+<!--        <field name="inherit_id" ref="sale.view_order_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//field[@name='payment_term_id']" position="after">-->
+<!--                <field name="hotel_id" readonly="1"/>-->
+<!--                <field name="room_type_id" readonly="1"/>-->
+<!--                <field name="meal_basis_id" readonly="1"/>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="crm_lead_view_form_inherit" model="ir.ui.view">-->
+<!--        <field name="name">crm.lead.view.form.inherit</field>-->
+<!--        <field name="model">crm.lead</field>-->
+<!--        <field name="inherit_id" ref="crm.crm_lead_view_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//button[@name='action_sale_quotations_new']" position="replace">-->
+<!--                <button string="Hotel Reservation" name="action_sale_quotations_new" type="object" class="oe_highlight" data-hotkey="q"-->
+<!--                        title="Create new quotation" attrs="{'invisible': ['|', ('type', '=', 'lead'), '&amp;', ('probability', '=', 0), ('active', '=', False)]}"/>-->
+<!--            </xpath>-->
+<!--            <xpath expr="//field[@name='tag_ids']" position="after">-->
+<!--                <field name="hotel_id"/>-->
+<!--                <field name="room_type_id"/>-->
+<!--                <field name="meal_basis_id"/>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+    <!-- <record id="tax_rule_form" model="ir.ui.view">
+      <field name="name">tax.rule.form</field>
+      <field name="model">tax.rule</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet string="Tax Rule">
+            <group>
+              <group>
+                <field name="name"/>
+                <field name="from_date"/>
+                <field name="to_date"/>
+                <field name="rule_type"/>
+                <field name="frequency"/>
+              </group>
+              <group>
+                <field name="currency_id"/>
+                <field name="description"/>
+              </group>
+              <notebook>
+                <page name="tax_rule_lines" string="Tax Rule Lines">
+                    <field name="line_ids" widget="one2many">
+                        <tree editable="bottom">
+                          <field name="from_amount"/>
+                          <field name="to_amount"/>
+                          <field name="percentage"/>
+                        </tree>
+                    </field>
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="tax_rule_tree" model="ir.ui.view">
+      <field name="name">tax.rule.tree</field>
+      <field name="model">tax.rule</field>
+      <field name="arch" type="xml">
+        <tree>
+              <field name="name"/>
+              <field name="from_date"/>
+              <field name="to_date"/>
+              <field name="rule_type"/>
+              <field name="frequency"/>
+              <field name="currency_id"/>
+              <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="open_tax_rule" model="ir.actions.act_window">
+        <field name="name">Tax Rule</field>
+        <field name="res_model">tax.rule</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="open_tax_rule" id="menu_open_tax_rule" name="Tax Rule" parent="hr_payroll.menu_hr_payroll_employees_root" sequence="40"/>
+
+    <record id="employee_hours_form" model="ir.ui.view">
+      <field name="name">employee.hours.form</field>
+      <field name="model">employee.hours</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet string="Import Data">
+            <group>
+              <group>
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="from_date"/>
+                <field name="to_date"/>
+                <field name="hours_worked"/>
+              </group>
+              <group>
+                <field name="company_id"/>
+                <field name="number_of_holidays"/>
+                <field name="pension_refund"/>
+                <field name="state"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="employee_hours_tree" model="ir.ui.view">
+      <field name="name">employee.hours.tree</field>
+      <field name="model">employee.hours</field>
+      <field name="arch" type="xml">
+        <tree>
+              <field name="name"/>
+              <field name="employee_id"/>
+              <field name="from_date"/>
+              <field name="to_date"/>
+              <field name="hours_worked"/>
+              <field name="company_id"/>
+              <field name="number_of_holidays"/>
+              <field name="pension_refund"/>
+              <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="open_employee_hours_form" model="ir.actions.act_window">
+        <field name="name">Import Data</field>
+        <field name="res_model">employee.hours</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="open_employee_hours_form" id="menu_open_employee_hours_form" name="Import Data" parent="hr_payroll.menu_hr_payroll_employees_root" sequence="30"/>
+
+    <record id="hr_contract_inherited_view_form" model="ir.ui.view">
+        <field name="name">hr.contract.inherited.view.form</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='information']" position="after">
+              <page name="allowances" string="Allowances">
+                <group>
+                  <group>
+                    <field name="ex_gratia"/>
+                    <field name="commission"/>
+                    <field name="bouns"/>
+                  </group>
+                  <group>
+                    <field name="car_allowance"/>
+                    <field name="additional_pay"/>
+                  </group>                                        
+                </group>                                        
+              </page>
+              <page name="deduction" string="Deduction">
+                <group>
+                  <group>
+                    <field name="expenses"/>
+                    <field name="salary_sacrifice"/>
+                  </group>
+                  <group>
+                    <field name="childcare_vouchers"/>
+                    <field name="advance_payments"/>
+                  </group>                                        
+                </group>                                        
+              </page> 
+              <page name="pension" string="Pension">
+                <field name="pension_percentage_ids" widget="one2many" nolabel="1">
+                  <tree editable="bottom">
+                    <field name="status"/>
+                    <field name="from_date"/>
+                    <field name="to_date"/>
+                    <field name="pension_percentage"/>
+                  </tree>
+                </field>
+              </page>   
+            </xpath>
+        </field>
+    </record> -->
+    
+  </data>
+</odoo>
